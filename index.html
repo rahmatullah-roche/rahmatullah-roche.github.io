@@ -1,1 +1,404 @@
-Rahmatullah Roche
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif; /*'Helvetica', Arial, sans-serif;*/
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9; /* Light gray background */
+            color: #333;
+        }
+
+        a {
+            color: #0073e6; /* Academic blue for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005bb5; /* Darker blue on hover */
+        }
+
+        h2, h3 {
+            color: #000000; /* Section heading in black */
+        }
+
+        /* Navigation Bar (Menu) */
+        .navbar {
+            background-color: #004080; /* Dark academic blue */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            
+        }
+
+        .navbar a:hover {
+            color: #ffdd57; /* A complementary gold for hover effect */
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 60px 20px 20px; /* Extra top padding for fixed navbar */
+            gap: 15px;
+        }
+
+        /* Left Section (Profile and News) */
+        .left-section {
+            flex: 1;
+            max-width: 335px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        /* Scrollable News Section */
+        .news-container {
+            margin-top: 20px;
+        }
+
+        .news {
+            max-height: 780px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9ff; /* Light grayish background */
+            border-radius: 5px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .news-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Right Section (Content) */
+        .right-section {
+            flex: 2;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-section h1 {
+            color: #004080; /* Dark blue for main title */
+            margin-bottom: 10px;
+        }
+
+        .right-section p, li {
+            margin: 0 0 10px;
+            line-height: 1.6;
+        }
+
+        /* Section Headers */
+        .advising-container, 
+        .former-advisees-container, 
+        .publications-container {
+            margin-top: 20px;
+        }
+
+        .awards-container {
+            margin-top: 10px;
+        }
+
+        .publications-list li::before {
+            content: "• ";
+            color: #0073e6;
+        }
+        .dashed-line {
+    border: 0;
+    border-top: 2px solid #aaa; /* Adjust the color and width as needed */
+    margin: 20px 0; /* Space above and below the line */
+}
+/* Style for the CV link to float right */
+.navbar ul li {
+    float: left;
+}
+.navbar ul li.cv-link {
+    float: right;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#profile">About Me</a></li>
+            <li><a href="#news">News</a></li>
+            
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Awards and Grants</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="cv-link"><a href="CV.pdf" target="_blank">CV</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section" id="profile">
+   
+            
+
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+
+            
+
+            <div class="contact-info">
+                
+                
+                 Office: CCT 431<br>
+                4225 University Avenue,<br>
+                Columbus, GA 31907<br>
+                
+                
+                Email: <a href="mailto:roche_rahmatullah@columbusstate.edu">roche_rahmatullah@columbusstate.edu</a><br><br>
+                
+                <!-- Social Media Links -->
+                
+                <div style="display: flex; justify-content: center; gap: 30px; margin-top: 5px;">
+                    <a href="https://scholar.google.com/citations?user=ghLQkNoAAAAJ&hl=en" target="_blank" style="text-decoration: none;" title="Google Scholar">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" style="width: 20px; vertical-align: middle;"> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahmatullahr" target="_blank" style="text-decoration: none;" title="LinkedIn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="width: 20px; vertical-align: middle;"> 
+                    </a>
+                    <a href="https://x.com/rahmatullahroc1" target="_blank" style="text-decoration: none;" title="X (Previously, twitter)">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="Twitter" style="width: 20px; vertical-align: middle;"> 
+                    </a>
+                </div>
+            </div>
+            <!-- News Section -->
+            <div class="news-container" id="news">
+                <h2>News</h2>
+                <div class="news">
+                    <div class="news-item"><strong>9 Dec. 2024:</strong> Awarded the Experiential Learning Field Trip Grant, CSU</div>
+                    <div class="news-item"><strong>14 Nov. 2024:</strong> Awarded the Core Course Design Institute Professional Development Award, CSU</div>
+                    
+                    <div class="news-item"><strong>09 Sep. 2024:</strong> New NSF ACCESS computational resources awarded for my research.</div>
+                    <div class="news-item"><strong>16 Aug. 2024:</strong> Participating Core Course Design Institute, CSU for Fall, 2024.</div>
+                    <div class="news-item"><strong>10 Aug. 2024:</strong> Joined Columbus State University as a tenure-track assistant professor.</div>
+                    <div class="news-item"><strong>12 Jul. 2024:</strong> Our new <a href="https://doi.org/10.1093/biomethods/bpae047">Biology Methods & Protocols paper</a> published.</div>
+                    
+                    <div class="news-item"><strong>08 Jul. 2024:</strong> Successfully defended my Ph.D. dissertation! Thanks to my family and friends, my Ph.D. supervisor, mentors and colleagues.</div>
+                    <div class="news-item"><strong>23 Apr. 2024:</strong> Accepted a tenure-track Assistant Professor position in the Computer Science department at Columbus State University.</div>
+                    <div class="news-item"><strong>28 Mar. 2024</strong> Honored to receive the 3rd place award in the Flash Talk category at the VT GPSS Graduate Research Symposium.</div>
+                    <div class="news-item"><strong>28 Jan. 2024:</strong> Our new <a href="https://academic.oup.com/nar/article/52/5/e27/7590918">Nucleic Acids Research paper</a> published. .</div>
+                    <div class="news-item"><strong>14 Sep. 2023:</strong> Honored to receive Pratt Fellowship.</div>
+                </div>
+            </div>
+            <!--Teaching Section-->
+            <div class="Teaching-container", id="teaching">
+                <h2>Teaching</h2>
+                <h3>Spring 2025</h3>
+                <li>CPSC 1301K - Computer Science I</li>
+                <li>CPSC 2105 - Computer Organization</li>
+                <li>CPSC 3118 - Graphical User Interface Development</li>
+                <h3>Fall 2024</h3>
+                <li>CPSC 1301K - Computer Science I</li>
+                <li>CPSC 2105 - Computer Organization</li>
+                
+                <h3>Previous Teaching Experience</h3>
+                <h4>Graduate Teaching Assistantship (Auburn University)</h4>
+                
+                    <li>
+                        COMP 3270- Introduction to Algorithms
+                        <ul>
+                            <li>Fall 2020</li>
+                            <li>Spring 2020</li>
+                            <li>Fall 2019</li>
+                            <li>Fall 2018</li>
+                        </ul>
+                    </li>
+                    <li>
+                        CPSC 2713 - Software Construction
+                        <ul>
+                            <li>Spring 2019</li>
+                        </ul>
+                    </li>
+                    <h4>Lecturer, Eastern University</h4>
+                    <li>2016-2018</li>
+                
+            </div> 
+            
+            
+
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>Rahmatullah Roche, Ph.D.</h1>
+            <p>I am a tenure-track Assistant Professor in the <a href="https://www.columbusstate.edu/computer-science/">Department of Computer Science</a> at <a href="https://www.columbusstate.edu/">Columbus State University</a>. 
+                My research interests include computational biology, applied machine learning, data science, and human-computer interaction. Currently, my research is primarily focused on macromolecular predictive modeling, with a specific emphasis on intra- and inter-molecular interaction prediction using cutting-edge artificial intelligence techniques.
+                </p>
+                <p>Prior to joining Columbus State University, I obtained my Ph.D. in <a href="https://cs.vt.edu/"> Computer Science</a> from <a href="https://www.vt.edu/"> Virginia Tech</a>  in 2024 under the supervision of <a href="https://people.cs.vt.edu/dbhattacharya/">Dr. Debswapna Bhattacharya</a>. I am a recipient of the prestigious <a href="https://cs.vt.edu/Graduate/Funding/fellowships.html">Pratt Fellowship Award</a>, 2023-2024 at Virginia Tech.</p>
+
+                   <p> Before pursuing my Ph.D., I completed my Master of Science in <a href="https://www.eng.auburn.edu/comp/">Computer Science and Software Engineering</a> at <a href="https://auburn.edu/">Auburn University</a> (2021), and my Bachelor of Science in Computer Science and Engineering at <a href="buet.ac.bd">Bangladesh University of Engineering and Technology (BUET)</a> (2016).
+                </p>
+                <p>I am always open to interdisciplinary collaborations aimed at advancing science and technology, particularly in applied machine learning, data science, and human-computer interaction.</p>
+            
+
+            <!-- Publications Section -->
+            <div class="Publications-container" id="publications">
+                <h2>Publications</h2>
+                <h3>Preprints</h3>
+                <ul>
+                    <li><b>Rahmatullah Roche,</b> Sumit Tarafder, Debswapna Bhattacharya, "Single-sequence protein-RNA complex structure prediction by geometric attention-enabled pairing of biological language models",
+                        
+                        <i>bioRxiv</i>, 2024<br>
+                        <a href="https://www.biorxiv.org/content/10.1101/2024.07.27.605468v1">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/ProRNA3D-single">Github</a></li>
+                </ul>
+                <h3>2024</h3>
+                <ul>
+                    <li><b>Rahmatullah Roche,</b> Bernard Moussad, Md Hossain Shuvo, Sumit Tarafder, Debswapna Bhattacharya, "EquiPNAS: improved protein-nucleic acid binding site prediction using protein-language-model-informed equivariant deep graph neural networks",
+                        
+                        <i>Nucleic Acids Research,</i> 52 (5), e27-e27, 2024<br>
+                        <a href="https://academic.oup.com/nar/article/52/5/e27/7590918">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/EquiPNAS">GitHub</a></li>
+                    <li>Sumit Tarafder, <b>Rahmatullah Roche,</b> Debswapna Bhattacharya, "The landscape of RNA 3D structure modeling with transformer networks",
+                        
+                        <i>Biology Methods and Protocols,</i> 9 (1), bpae047, 2024<br>
+                        <a href="https://academic.oup.com/biomethods/article/9/1/bpae047/7703282">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/RNAmark/">GitHub</a></li>
+                    
+                </ul>
+                <h3>2023</h3>
+                <ul>
+                    <li>Bernard Moussad*, <b>Rahmatullah Roche*,</b> Debswapna Bhattacharya, "The transformative power of transformers in protein structure prediction",
+
+<i>Proceedings of the National Academy of Sciences of the United States of America (PNAS),</i> 120 (32) e2303499120, 2023 [*Equal contribution]<br> 
+<a href="https://www.pnas.org/doi/abs/10.1073/pnas.2303499120">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/CASP15">GitHub</a> 
+</li>
+
+<li><b>Rahmatullah Roche,</b> Bernard Moussad, Md Hossain Shuvo, Debswapna Bhattacharya, "E(3) equivariant graph neural networks for robust and accurate protein-protein interaction site prediction",
+    
+    <i>PLOS Computational Biology,</i> 19(8): e1011435, 2023<br>
+    <a href="https://doi.org/10.1371/journal.pcbi.1011435">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/EquiPPIS">GitHub</a></li>
+    <li>Sutanu Bhattacharya, <b>Rahmatullah Roche,</b> Md Hossain Shuvo, Bernard Moussad, Debswapna Bhattacharya, "Contact-Assisted Threading in Low-Homology Protein Modeling",
+        
+        <i>Methods in Molecular Biology,</i> 2627: 41-59, 2023<br>
+        <a href="https://link.springer.com/protocol/10.1007/978-1-0716-2974-1_3">PDF</a> </li>
+        <li>Md Hossain Shuvo, Mohimenul Karim, <b>Rahmatullah Roche,</b> Debswapna Bhattacharya, "PIQLE: protein-protein interface quality estimation by deep graph learning of multimeric interaction geometries",
+            
+            <i>Bioinformatics Advances,</i> 3 (1) vbad070, 2023<br>
+            <a href="https://doi.org/10.1093/bioadv/vbad070">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/PIQLE">GitHub</a></li>
+                </ul>
+                <h3>2022</h3>
+                <ul>
+                    <li>
+                        <b>Rahmatullah Roche,</b> Sutanu Bhattacharya, Md Hossain Shuvo, Debswapna Bhattacharya, "rrQNet: Protein contact map quality estimation by deep evolutionary reconciliation",
+
+<i>PROTEINS: Structure, Function, and Bioinformatics,</i> 90(12): 2023-2034, 2022<br>
+<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/prot.26394">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/rrQNet">GitHub</a>
+                    </li>
+                    <li>Sutanu Bhattacharya, <b>Rahmatullah Roche,</b> Bernard Moussad, Debswapna Bhattacharya, "DisCovER: distance- and orientation-based covariational threading for weakly homologous proteins",
+                        
+                        <i>PROTEINS: Structure, Function, and Bioinformatics,</i> 90(2): 579-588, 2022 <br>
+                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.26254">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/DisCovER">GitHub</a> 
+                        </li>
+                </ul>
+                <h3>2021</h3>
+                <ul>
+                    <li><b>Rahmatullah Roche,</b> Sutanu Bhattacharya, Debswapna Bhattacharya, "Hybridized distance- and contact-based hierarchical structure modeling for folding soluble and membrane proteins",
+                        
+                        <i>PLOS Computational Biology, </i>17(2): e1008753, 2021 <br>
+                        <a href="https://doi.org/10.1371/journal.pcbi.1008753">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/DConStruct">GitHub</a> • Presented at the Highlights Track of ACM-BCB 2021
+                        </li>
+                        <li>
+                            Sutanu Bhattacharya, <b>Rahmatullah Roche,</b> Md Hossain Shuvo, Debswapna Bhattacharya, "Recent Advances in Protein Homology Detection Propelled by Inter-Residue Interaction Map Threading",
+
+<i>Frontiers Molecular Biosciences,</i> 8: 643752, 2021<br>
+<a href="https://doi.org/10.3389/fmolb.2021.643752">PDF</a> 
+                        </li>
+                </ul>
+                <h3>2020</h3>
+                <ul>
+                    <li>
+                        Andrew McGehee, Sutanu Bhattacharya*, <b>Rahmatullah Roche*,</b> Debswapna Bhattacharya, "PolyFold: an interactive visual simulator for distance-based protein folding",
+
+<i>PLOS ONE,</i> 15(12): e0243331, 2020 [*Equal contribution]<br>
+<a href="https://doi.org/10.1371/journal.pone.0243331">PDF</a> • <a href="https://github.com/Bhattacharya-Lab/PolyFold">GitHub</a> • <a href="https://twitter.com/acm_bcb/status/1309353062356615169">ACM-BCB 2020 Best Poster Award</a> 
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Awards Section -->
+            <div class="awards-container" id="awards">
+                
+                <h2>Awards and Grants</h2>
+                <ul>
+                <li>PI, "Advanced computational prediction of biomolecular properties and interactions", NSF ACCESS Explore Resources, 2024-2025</li>
+                <li>Core Course Design Institute  Professional Development Award, Columbus State University, 2024</li>
+                <li>Experiential Learning Field Trip Grant, Columbus State University, 2024</li>
+                <li>Travel award as YSEA Finalist,
+                    20th Annual meeting of MCBIOS, 2024</li>
+                <li>Pratt Fellowship at Virginia Tech, 2023-2024.</li>
+                <li><a href="https://doi.org/10.1371/journal.pcbi.1008753">Our Work</a> got selected for <b>Highlight Talk</b> in the 12th ACM-BCB conference, 2021.</li>
+                 <li><a href="https://doi.org/10.1371/journal.pone.0243331">Our work</a> has been awarded <b>Best Poster</b> in the 11th ACM-BCB conference, 2020.
+                </li>
+            </ul>
+                
+                
+            </div>
+            <!--Services Section-->
+            <div class="Services-container", id="services">
+                <h2>Services</h2>
+                
+                <li>Discipline Coordinator for Computer Science (BS) - Web Development, CSU (2024)</li>
+                <li>Reviewer: <a href="https://ieeebibm.org/">BIBM</a> (2024), <a href="https://academic.oup.com/bib">Briefings in Bioinformatics</a> (2024), <a href="https://www.nature.com/srep/">Nature Scientific Reports</a> (2023), <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8857">IEEE/ACM TCCB</a> (2023)</li>
+                <li>Participated <a href="https://predictioncenter.org/casp16/index.cgi">CASP 16</a></li>
+                
+            </div> 
+
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
